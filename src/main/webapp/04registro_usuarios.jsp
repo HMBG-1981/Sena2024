@@ -1,7 +1,7 @@
 <%-- 
     Document   : 04registro_usuarios
     Created on : 15/08/2024, 3:30:15 p. m.
-    Author     : jedab
+    Author     : jedabc 2024
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
