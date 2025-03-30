@@ -176,7 +176,7 @@
                 <% if (productos != null && productos.length > 0) { %>
                 <h2>Total: $<span id="total-a-pagar"><%= String.format("%.2f", total) %></span></h2>
                 <button type="submit">Confirmar Pedido</button>
-                <button type="button" onclick="window.location.href = 'productos.jsp'">Volver a Productos</button>
+                <button type="button" onclick="window.location.href = '11productos.jsp'">Volver a Productos</button>
                 <% } %>
             </form>
         </div>

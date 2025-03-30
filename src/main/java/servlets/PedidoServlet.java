@@ -74,6 +74,6 @@ public class PedidoServlet extends HttpServlet {
             out.println("<h1>No hay productos seleccionados!</h1>");
         }
 
-        out.println("<a href='productos.jsp'>Volver a Productos</a>");
+        out.println("<a href='11productos.jsp'>Volver a Productos</a>");
     }
 }

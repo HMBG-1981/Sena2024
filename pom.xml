@@ -69,9 +69,12 @@
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
-
-
-
+        <dependency>
+            <groupId>jakarta.interceptor</groupId>
+            <artifactId>jakarta.interceptor-api</artifactId>
+            <version>2.1.0</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
     
     <build>

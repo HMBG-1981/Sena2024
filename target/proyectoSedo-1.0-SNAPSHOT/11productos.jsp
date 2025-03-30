@@ -88,6 +88,7 @@
                     -1px  1px 0 black,  /* Sombra abajo a la izquierda */
                     1px  1px 0 black;  /* Sombra abajo a la derecha */
             }
+            
             footer {
                 margin-top: 15px;
                 font-size: 90%;
@@ -114,7 +115,7 @@
             <img src="img/Logo2.jpg" alt="Logo" class="logo"> <!-- Logo en la parte superior -->
             <h1>PODUCTOS</h1>
 
-            <form id="product-form" action="carrito.jsp" method="POST">
+            <form id="product-form" action="16carrito.jsp" method="POST">
                 <h2>FRITOS</h2>
                 <table>
                     <thead>

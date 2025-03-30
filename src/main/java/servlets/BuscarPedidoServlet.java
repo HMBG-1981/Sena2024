@@ -43,7 +43,7 @@ public class BuscarPedidoServlet extends HttpServlet {
 
             // Estilos
             out.println("<html><head><style>");
-            out.println("body { background-image: url('img/upload-816230812391.png'); background-size: cover; color: #333; font-family: Arial, sans-serif; }");
+            out.println("body { background-image: url('img/Fondo1.png'); background-size: cover; color: #333; font-family: Arial, sans-serif; }");
             out.println("#logo { display: block; margin: 0 auto; }");
             out.println("table { width: 100%; border-collapse: collapse; margin-top: 20px; background-color: #74ff63; }");  // Fondo de la tabla
             out.println("th, td { border: 1px solid black; padding: 8px; text-align: left; }");
@@ -65,7 +65,7 @@ public class BuscarPedidoServlet extends HttpServlet {
 
             // Título principal "ASADOS ANGÉLICA"
             out.println("<h1>ASADOS ANGÉLICA</h1>");
-            out.println("<img src='img/Logo02.jpg' id='logo' alt='Logo' style='max-width: 15%; width: auto; height: auto;'>");
+            out.println("<img src='img/Logo2.jpg' id='logo' alt='Logo' style='max-width: 15%; width: auto; height: auto;'>");
 
             // Formulario para buscar pedido
             out.println("<form action='BuscarPedidoServlet' method='post'>");
@@ -93,15 +93,26 @@ public class BuscarPedidoServlet extends HttpServlet {
                 out.println("<p>No se encontró un pedido con el ID: " + idPedido + "</p>");
             }
 
-            // Botón para volver al módulo 07modulo_empleados.jsp
-            out.println("<form action='07modulo_empleados.jsp' method='get'>");
-            out.println("<button type='submit'>Volver</button>");
-            out.println("</form>");
+            // Botón de regreso
+            out.println("<button onclick='history.back()' id='backButton'>Volver</button>");
+
+            // Estilos para el botón de regreso
+            out.println("<style>");
+            out.println("#backButton {");
+            out.println("position: fixed;");
+            out.println("bottom: 20px;");
+            out.println("right: 20px;");
+            out.println("padding: 10px 20px;");
+            out.println("background-color: blue;");
+            out.println("color: white;");
+            out.println("border: none;");
+            out.println("border-radius: 5px;");
+            out.println("cursor: pointer;");
+            out.println("}");
+            out.println("#backButton:hover { background-color: darkblue; }");
+            out.println("</style>");
 
             out.println("</body></html>");
-
-            ps.close();
-            conn.close();
         } catch (Exception e) {
             out.println("<h2>Error: " + e.getMessage() + "</h2>");
         }

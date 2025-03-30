@@ -137,7 +137,7 @@
             <button onclick="window.location.href = '12ver_pedidos.jsp'"><b>Pedidos del Día</b></button>
             <button onclick="window.location.href = '13consultar_clientes.jsp'"><b>Consultar Clientes</b></button>
             <button onclick="window.location.href = '14ver_productos.jsp'"><b>Consultar Productos</b></button>
-            <button onclick="window.location.href = '11registro_empleados.jsp'"><b>Registrar Empleados</b></button>
+            <button onclick="window.location.href = '08registro_empleados.jsp'"><b>Registrar Empleados</b></button>
 
             <!-- Segunda fila de botones -->
             <button onclick="window.location.href = '05ingresar_actualizar_productos.jsp'"><b>Registrar Productos</b></button>

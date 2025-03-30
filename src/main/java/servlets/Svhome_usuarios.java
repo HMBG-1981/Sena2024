@@ -16,7 +16,7 @@ public class Svhome_usuarios extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String role = request.getParameter("role");
         if (role == null) {
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("01index.jsp");
             return;
         }
 
@@ -24,7 +24,7 @@ public class Svhome_usuarios extends HttpServlet {
             
             case "Productos":
                 // Lógica para la página de Productos
-                response.sendRedirect("productos.jsp");
+                response.sendRedirect("11productos.jsp");
                 break;
 
             case "Sugerencias":

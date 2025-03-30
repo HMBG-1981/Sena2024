@@ -43,7 +43,7 @@ public class ConsultarProductoServlet extends HttpServlet {
 
             // Estilos y encabezado de la página
             out.println("<html><head><style>");
-            out.println("body { background-image: url('img/upload-816230812391.png'); background-size: cover; color: #333; font-family: Arial, sans-serif; }");
+            out.println("body { background-image: url('img/Fondo1.png'); background-size: cover; color: #333; font-family: Arial, sans-serif; }");
             out.println("#logo { display: block; margin: 0 auto; }");
             out.println("input[type='text'] { padding: 10px; margin: 5px; width: 300px; }");
             out.println("form { text-align: center; margin-top: 20px; }");
@@ -57,7 +57,7 @@ public class ConsultarProductoServlet extends HttpServlet {
             out.println("</style></head><body>");
 
             out.println("<h1>ASADOS ANGÉLICA</h1>");
-            out.println("<img src='img/Logo02.jpg' id='logo' alt='Logo' style='max-width: 15%; width: auto; height: auto;'>");
+            out.println("<img src='img/Logo2.jpg' id='logo' alt='Logo' style='max-width: 15%; width: auto; height: auto;'>");
 
             // Formulario para buscar cliente
             out.println("<form action='BuscarProductosServlet' method='post'>");
@@ -82,16 +82,26 @@ public class ConsultarProductoServlet extends HttpServlet {
                 out.println("<tr><td colspan='4'>No se encontró el producto con ID: " + idProducto + "</td></tr>");
             }
             
-            // Botón para volver al módulo 07modulo_empleados.jsp
-            out.println("<form action='07modulo_empleados.jsp' method='get'>");
-            out.println("<button type='submit'>Volver</button>");
-            out.println("</form>");
+            // Botón de regreso
+            out.println("<button onclick='history.back()' id='backButton'>Volver</button>");
 
-            out.println("</table>");
+            // Estilos para el botón de regreso
+            out.println("<style>");
+            out.println("#backButton {");
+            out.println("position: fixed;");
+            out.println("bottom: 20px;");
+            out.println("right: 20px;");
+            out.println("padding: 10px 20px;");
+            out.println("background-color: blue;");
+            out.println("color: white;");
+            out.println("border: none;");
+            out.println("border-radius: 5px;");
+            out.println("cursor: pointer;");
+            out.println("}");
+            out.println("#backButton:hover { background-color: darkblue; }");
+            out.println("</style>");
+
             out.println("</body></html>");
-
-            ps.close();
-            conn.close();
         } catch (Exception e) {
             out.println("<h2>Error: " + e.getMessage() + "</h2>");
         }

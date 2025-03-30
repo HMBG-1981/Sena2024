@@ -68,6 +68,21 @@
                     -1px  1px 0 black,  /* Sombra abajo a la izquierda */
                     1px  1px 0 black;  /* Sombra abajo a la derecha */
             }
+            #backButton {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                padding: 10px 20px;
+                background-color: blue;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            #backButton:hover {
+                background-color: darkblue;
+            }
             footer {
                 margin-top: 15px;
                 font-size: 90%;
@@ -90,7 +105,7 @@
     </head>
     <body>
         <h1>ASADOS ANGÉLICA</h1>
-        <img src="img/Logo02.jpg" id="logo" alt="Logo">
+        <img src="img/Logo2.jpg" id="logo" alt="Logo">
         <div class="container mt-5 form-container">
             <h2 class="text-center">Lista de Productos</h2>
             <form action="BuscarProductosServlet" method="post">
@@ -104,7 +119,7 @@
         <footer>
             <img src="img/pngegg.png" alt="Copyright" class="copyright-logo">
             2024. Todos los derechos reservados. SEDO-CRA V1.0.0
-            <a href="10modulo_Administrador.jsp" class="go-to-index-btn"><b><--Volver</b></a>
+            <button onclick="window.history.back();" id="backButton">Volver</button>
         </footer
     </body>
 </html>

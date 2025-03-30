@@ -41,14 +41,11 @@
                 width: 30%;
             }
 
-            .btn-custom {
-                background-color: #72e85f;
-                border-color: #72e85f;
-                color: black;
-                width: 220px;
-                padding: 5px;
-                box-shadow: 7px 13px 37px #000;
-                margin-top: 20px;
+            .btn-secondary {
+                padding: 1%;
+                margin: 5px;
+                color: #000;
+                background-color: #1db50b;
             }
 
             .dropdown-item {
@@ -133,9 +130,9 @@
 
 
         <form action="home" method="get">
-            <button class="btn btn-custom" name="role" value="Productos">Productos</button>
-            <button class="btn btn-custom" name="role" value="Sugerencias">Quejas y Sugerencias</button>
-            <button class="btn btn-custom" name="role" value="Salir">Cerrar Sesión</button>
+            <button class="btn btn-secondary" name="role" value="Productos">Productos</button>
+            <button class="btn btn-secondary" name="role" value="Sugerencias">Quejas y Sugerencias</button>
+            <button class="btn btn-secondary" type="submit" onclick="return confirmarLogout();">Cerrar Sesión</button>
         </form> 
 
         <p>SERVICIO DE VIERNES A DOMINGO, Y FESTIVOS</p>
