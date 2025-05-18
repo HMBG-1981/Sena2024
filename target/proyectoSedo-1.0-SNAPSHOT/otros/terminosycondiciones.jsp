@@ -16,13 +16,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
+            background-color: #ffd54f;
             background-image: url('img/pattern.png');
             background-repeat: repeat;
+            text-align: center;
         }
         .container {
-            background-color: #ffffff;
+            background-color: #72e85f;
             background-clip: padding-box;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -33,11 +33,13 @@
             position: relative;
         }
         h1, h2 {
-            color: #2c3e50;
+            color: #1900ff;
+            text-shadow: 2px 2px 0 rgb(17, 16, 16), 2px -2px 0 rgb(7, 7, 7), -1px -1px 0 rgb(0, 0, 0);
         }
         h1 {
             font-size: 2em;
             margin-bottom: 0.5em;
+            
         }
         h2 {
             font-size: 1.5em;
@@ -45,6 +47,7 @@
             margin-bottom: 0.5em;
         }
         p {
+            color: #000;
             line-height: 1.6;
             margin-bottom: 1em;
         }
@@ -79,6 +82,7 @@
     </style>
 </head>
 <body>
+    <h1>SEDO CRA - SOFTWARE</h1>
     <div class="container">
         <h1>Términos y Condiciones</h1>
         <p>

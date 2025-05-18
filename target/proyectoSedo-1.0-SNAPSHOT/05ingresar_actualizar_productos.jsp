@@ -116,6 +116,25 @@
                 font-size: 14px;
                 color: rgb(0, 0, 0);
             }
+            
+            .go-to-index-btn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                padding: 10px 20px;
+                background-color: #1900ff;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+                font-size: 16px;
+                transition: background-color 0.3s;
+                text-decoration: underline;
+            }
+
+            .go-to-index-btn:hover {
+                background-color: #45a049;
+            }
 
             footer {
                 margin-top: 15px;
@@ -158,6 +177,10 @@
             <button type="submit" name="action" value="actualizar">Actualizar</button>
             <button type="submit" name="action" value="eliminar">Eliminar</button>
         </form>
+        
+        <!-- Enlace para regresar a la página de inicio -->
+        <a href="10modulo_Administrador.jsp" class="go-to-index-btn">Regresar</a>
+        
         <footer>
             <img src="img/pngegg.png" alt="Copyright" class="copyright-logo">
             2024. Todos los derechos reservados. SEDO-CRA V1.0.0

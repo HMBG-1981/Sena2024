@@ -40,13 +40,7 @@
                 background-attachment: fixed;
             }
 
-            /* Icono de usuario que aparece en la esquina superior derecha */
-            .icon-user {
-                margin-left: 80%;
-                width: 50px;
-                height: 50px;
-            }
-
+            
             /* Estilo del título principal */
             h1 {
                 margin: auto;
@@ -74,7 +68,7 @@
                 font-size: 1.5em;
                 color: rgb(0, 0, 0);
                 font-weight: 400;
-                margin-top: 10px;
+                margin-top: 20px;
                 width: 300px;
                 border-radius: 10px;
                 text-decoration: none;
@@ -82,9 +76,9 @@
 
             /* Enlace de registro de usuario */
             a.regis {
-                margin-left: 80%;
-                color: rgb(0, 0, 0);
-                font-size: 14px;
+                margin-left: 0%;
+                color: #49ff00;
+                font-size: 16px;
             }
 
             /* Estilo de la sección que contiene los botones y el formulario */
@@ -94,8 +88,7 @@
 
             /* Estilos para el pie de página */
             footer {
-                margin-top: 15px;
-                font-size: 90%;
+                font-size: 70%;
                 color: #49ff00;
                 position: absolute; /* Posicionamiento absoluto */
                 bottom: 10px; /* Ajuste de posición */
@@ -121,14 +114,13 @@
         <h1>ASADOS ANGELICA <br>¡Bienvenidos!</h1>
     <center>
         <!-- Ícono de usuario que aparece en la parte superior de la página -->
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-user">
+        
         <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
         </svg>
 
         <!-- Contenedor principal de los elementos de la página -->
         <div id="general">
-            <!-- Enlace para registrar un nuevo usuario -->
-            <a class="regis" href="04registro_usuarios.jsp"><b>Registrar Usuario<b></a>
+            
 
             <!-- Subtítulo de ingreso de usuarios -->
             <h2>INGRESO DE USUARIOS</h2>
@@ -137,7 +129,10 @@
                 <form action="index" method="get">
                     <button class="btn-a" name="role" value="Administrador">Administrador</button>
                     <button class="btn-a" name="role" value="Empleado">Empleado</button>                                                              
-                    <button class="btn-a" name="role" value="Clientes">Clientes</button>   
+                    <button class="btn-a" name="role" value="Clientes">Clientes</button> >
+                    <br><br><br><br>
+                    <!-- Enlace para registrar un nuevo usuario -->
+                    <a class="regis" href="04registro_usuarios.jsp"><b>Registro Usuario<b></a>
                 </form>
 
                 <!-- Pie de página con derechos de autor -->
